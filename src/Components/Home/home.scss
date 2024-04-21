@@ -1,0 +1,206 @@
+@font-face {
+  font-family: eng1;
+  src: url("../../fonts/1.ttf");
+}
+label {
+    margin-bottom: 0;
+}
+
+.home-page{
+    background: url("../../images/+.jpg");
+    background-position:left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative ;
+    .container-logo{
+        height: 70px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.242);
+       
+        div{
+            position: absolute;
+            top: 19px;
+            right: 15px;
+            color: white;
+        }
+    }
+    .home-text{
+        color: white;
+        height: 
+        150px;
+        position: relative;
+        div{
+          text-align: center;
+
+            img{
+              width: 110px;
+              margin-top: 10px;
+              padding-top: 38vh;
+            }
+            h2{
+              font-family: eng1;
+              padding-top: 5px;
+              font-size: 30px ;
+              color: #dfcaca;
+                
+            }
+            h4{
+                font-size: 1.2rem;
+            }
+        }
+    }
+   
+}
+// resposnice
+
+
+@media (min-width:285px){
+  .home-text{
+    div{
+        img{
+          width: 150px !important;
+          margin-top: 10px;
+          padding-top: 38vh;
+        }
+        h2{
+          padding-top: 5px;
+          font-size: 35px !important;            
+        }
+        h4{
+            font-size: 1.2rem;
+        }
+    }
+}
+@media (min-width:325px){
+  .home-text{
+    div{
+        img{
+          width: 180px !important;
+        }
+        h2{
+          font-size: 38px !important;            
+        }
+        h4{
+            font-size: 1.5rem;
+        }
+    }
+}
+@media (min-width:355px){
+  .home-text{
+    div{
+        img{
+          width: 190px !important;
+        }
+        h2{
+          font-size: 39px !important;            
+        }
+        h4{
+            font-size: 1.6rem;
+        }
+    }
+}}
+}
+@media(min-width:780px){
+  .home-page{
+    background: none;
+    
+  }
+}
+// switch
+
+
+.tgl {
+	display: none;
+  
+	// add default box-sizing for this scope
+	&,
+  &:after,
+  &:before,
+	& *,
+  & *:after,
+  & *:before,
+	& + .tgl-btn {
+		box-sizing: border-box;
+		&::selection {
+			background: none;
+		}
+	}
+  
+	+ .tgl-btn {
+		outline: 0;
+		display: block;
+		width: 4em;
+		height: 2em;
+		position: relative;
+		cursor: pointer;
+    user-select: none;
+		&:after,
+    &:before {
+			position: relative;
+			display: block;
+			content: "";
+			width: 50%;
+			height: 100%;
+		}
+    
+		&:after {
+			left: 0;
+		}
+    
+		&:before {
+			display: none;
+		}
+	}
+  
+	&:checked + .tgl-btn:after {
+		left: 50%;
+	}
+}
+
+// themes
+
+
+.tgl-ios {
+	+ .tgl-btn {
+		background: #0c0129;
+		border-radius: 2em;
+		padding: 2px;
+		transition: all .4s ease;
+		border: 1px solid #0d60c1;
+		&:after {
+			border-radius: 2em;
+			background: #0d60c1;
+			transition:
+        left .3s cubic-bezier(
+          0.175, 0.885, 0.320, 1.275
+        ),
+        padding .3s ease, margin .3s ease;
+			box-shadow:
+        0 0 0 1px rgba(0,0,0,.1),
+        0 4px 0 rgba(0,0,0,.08);
+		}
+    
+    &:hover:after {
+      will-change: padding;
+    }
+    
+		&:active {
+			box-shadow: inset 0 0 0 2em #e8eae9;
+			&:after {
+				padding-right: .8em;
+			}
+		}
+	}
+  
+	&:checked + .tgl-btn {
+    background: #cfc9c9;
+    &:active {
+      box-shadow: none;
+      &:after {
+        margin-left: -.8em;
+      }
+    }
+	}
+}
+}

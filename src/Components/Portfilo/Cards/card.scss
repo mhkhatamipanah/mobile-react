@@ -1,0 +1,82 @@
+@font-face {
+  font-family: eng2;
+  src: url("../../../fonts/2.ttf ");
+}
+@font-face {
+  font-family: eng3;
+  src: url("../../../fonts/3.ttf");
+}
+@font-face {
+  font-family: eng5;
+  src: url("../../../fonts/5.ttf");
+}
+.card{
+  flex: 0 0 49.5%;
+  max-width: 49.5%;
+  margin: 3px 0;
+}
+.row{
+  margin: 0 -5px !important;
+}
+.container-of-cards{
+  justify-content: space-between
+}
+
+.image-card {
+  height: 150px;
+  background-color: #ccc;
+  border-radius: 3px;
+  div {
+    display: flex;
+    justify-content: center;
+
+    .img-card {
+      height:150px;
+    }
+  }
+}
+
+.title-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  h2 {
+    font-family: eng2;
+    font-size: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  img {
+    width: 20px;
+  }
+}
+.text-card {
+  height: 80px;
+  h4 {
+    font-family: eng3;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 10px;
+  }
+  a {
+    font-family: eng5;
+  }
+  .btn {
+    background-color: #191d2f;
+    border: none;
+    font-size: 10px;
+    margin: 5px 0;
+    padding: 3px 7px;
+  }
+  .btn:hover {
+    background-color: #025cbd;
+  }
+}

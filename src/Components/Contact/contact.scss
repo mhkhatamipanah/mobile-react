@@ -1,0 +1,37 @@
+.margin-contact{
+    margin:0 3vw;
+    margin-bottom: 100px;
+}
+.text-contact-us{
+    h2{
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 10px;
+        font-family: eng2;
+        color: #fff;
+    }
+}
+.container-contact{
+    display: grid;
+    grid-template-areas: 
+    "contact1 contact2"
+    "contact3 contact4"
+    ;
+    gap: 10px;
+    
+}
+
+.contact1{
+    grid-area: contact1;
+}
+.contact2{
+    grid-area: contact2;
+}
+.contact3{
+    grid-area: contact3;
+}
+.contact4{
+    grid-area: contact4;
+}
+

@@ -1,0 +1,88 @@
+.margin-ability{
+    margin: 0 3vw;
+    margin-bottom: 100px;
+}
+.home-ability{
+    padding-bottom: 25px;
+    position: relative;
+    color: white;
+    background: #172a46;
+    border-radius: 16px;
+}
+.margin-switch{
+    margin: 10px 4.2vw;
+}
+.text-and-switch{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+.text-myability{
+    color: #fff;
+    font-size:16px;
+    margin-bottom: 0;
+    margin-top: 2px;
+    font-family: eng2;
+}
+.grid-of-anility{
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas: 
+    "item1 item5" 
+    "item2 item6"
+    "item3 item7"
+    "item4 item8"
+    ;
+}
+@for $var from 1 to 9  {
+    .item#{$var}{
+        grid-area: item$var;
+    }
+}
+
+
+.width-90{
+    width: 90% ;
+}
+.width-80{
+    width: 80% ;
+}
+
+.width-70{
+    width: 70% ;
+}
+
+
+
+// switch
+.btn1{
+padding: 3px 6px ;
+border-radius: 3px 0 0 3px;
+background-color: #6c757d;
+font-family: eng4;
+}
+.btn2{
+padding: 3px 6px ;
+border-radius: 0 3px  3px 0 ;
+background-color: #6c757d;
+font-family: eng4;
+}
+.btn1:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn2:hover{
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.active-btn1{
+background-color: #5a6268 !important;
+}
+.active-btn2{
+background-color: #5a6268 !important;
+}
+.btn-secondary.focus, .btn-secondary:focus {
+box-shadow: none !important;
+}

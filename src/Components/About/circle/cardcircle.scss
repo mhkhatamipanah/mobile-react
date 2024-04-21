@@ -1,0 +1,108 @@
+.percent-90{
+    --percent: 36.5
+}
+
+.percent-80{
+    --percent: 33.5
+}
+.percent-70{
+    --percent: 29
+}
+.percent-60{
+  --percent: 25
+}
+
+.cardd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent !important;
+  width: 40vw;
+  height: 170px;
+  border-radius: 5px;
+  border: 1px solid rgba(83, 85, 120, 0.324);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.4), 0 10px 20px -10px rgba(0, 0, 0, 0.4);
+}
+
+.cardd .percent {
+  position: relative;
+}
+
+.cardd svg {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+}
+
+.cardd svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+.cardd svg circle:nth-child(2) {
+    stroke-width: 6;
+  }
+
+.cardd svg circle:last-of-type {
+  stroke-dasharray: 625px;
+  stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+}
+
+.cardd .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cardd .number h3 {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.cardd .number h3 span {
+  font-size: 20px;
+}
+
+.cardd .title h2 {
+  font-family: eng3;
+  font-size: 20px;
+
+}
+
+.cardd:nth-child(1) svg circle:last-of-type {
+  stroke: #de5a22;
+}
+
+.cardd:nth-child(2) svg circle:last-of-type {
+  stroke: #2ea6d2;
+}
+.cardd:nth-child(3) svg circle:last-of-type {
+    stroke: #e4cf2b;
+}
+.cardd:nth-child(4) svg circle:last-of-type {
+    stroke: #c76494;
+}
+.cardd:nth-child(5) svg circle:last-of-type {
+    stroke: #8512f7;
+}
+.cardd:nth-child(6) svg circle:last-of-type {
+    stroke: #00d5f7;
+}
+.cardd:nth-child(7) svg circle:last-of-type {
+    stroke: #ef5033;
+}
+
+.cardd:nth-child(8) svg circle:last-of-type {
+  stroke: #3fb27f;
+
+}
+.cardd:nth-child(9) svg circle:last-of-type {
+  stroke: #2fa3f7;
+
+}

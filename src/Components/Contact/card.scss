@@ -1,0 +1,40 @@
+
+
+.card-contact{
+    /* From https://css.glass */
+background: #172a46;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.8px);
+-webkit-backdrop-filter: blur(9.8px);
+border: 1px solid rgba(29, 33, 52, 0.69);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .img-contact{
+        img{
+            margin-top: 10px;
+            width: 40px;
+          
+        }
+    }
+    .title-cintact{
+        color: #fff;
+        padding-top: 8px;
+        font-size: 18px;
+        font-family: eng2;
+    }
+    .btn{
+        color: #fff;
+        background-color: #0a192f;
+        border: none;
+        font-size: 15px;
+        margin-bottom: 5px;
+        padding: 5px 20px;
+        font-family: eng4;
+    }
+    .btn:hover{
+        background-color: #025cbd;
+    }
+}

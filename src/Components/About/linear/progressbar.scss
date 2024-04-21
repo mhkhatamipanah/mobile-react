@@ -1,0 +1,45 @@
+.container-progressbar{
+    width: 40vw;
+    height: 50px;
+    left: 0;
+    margin-bottom: 20px;
+   div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+   }
+}
+.progress-bar{
+    background-color: #115db9 !important;
+}
+.icon-and-language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 24px;
+    }
+    p{
+        font-size: 12px;
+        font-family: eng3;
+    }
+
+}
+.percent{
+    font-family: eng5;
+    font-size: 13px;
+}
+.bg-progressbar{
+    margin-top: 3px;
+    width: 100%;
+    background-color: gray;
+    border-radius: 10px;
+    .progress-bar{
+        
+        border-radius: 3px;
+    }
+}
+.progress-bar{
+height: 10px;
+}

@@ -1,0 +1,75 @@
+@font-face {
+  font-family: eng4;
+  src: url("../../../fonts/4.ttf");
+}
+@font-face {
+  font-family: eng6;
+  src: url("../../../fonts/6.ttf");
+}
+
+.margin-portfilo {
+  margin: 0 2vw;
+  margin-bottom: 100px;
+}
+.btn-select-portfilo {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+
+  .btn{
+    font-family: eng4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    p{
+      color: #007bff;
+      padding-right: 3px ;
+    }
+    img{
+      width: 14px;
+    }
+  }
+}
+.btn-select-portfilo{
+
+  .btn:hover p{
+    color: white;
+  }
+}
+.active-btn{
+  color: #fff !important;
+background-color: #007bff !important;
+}
+@media  (min-width:285px) {
+  .btn-select-portfilo{
+    .btn{
+    font-size: 15px;
+    }
+  }
+}
+@media  (min-width:405px) {
+  .btn-select-portfilo{
+    .btn{
+padding: 7px 22px;    }
+  }
+}
+@media  (min-width:405px) {
+  .btn-select-portfilo{
+    .btn{
+padding: 7px 22px;    }
+  }
+}
+@media  (min-width:335px) {
+  .btn-select-portfilo{
+    .btn{
+padding: 5px 15px;    }
+  }
+}
+@media  (min-width:370px) {
+  .btn-select-portfilo{
+    .btn{
+padding: 6px 18px;    }
+  }
+}

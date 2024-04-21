@@ -1,0 +1,80 @@
+.person-about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 100px;
+        padding-top: 5px;
+     
+    }
+    h2,h4{
+        color: #fff;
+    }
+    h2{
+        font-size: 15px;
+        font-family: eng2;
+    }
+    h4{
+        font-size: 12px ;
+        font-family: eng4;
+    }
+}
+.margin-descripton{
+    margin: 0 3vw;
+}
+.description{
+    padding: 10px;
+    font-size: 13px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
+    background:#172a46; 
+    border-radius: 16px;
+    font-family: eng3;
+    p{
+        color: #fff;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+.place-and-phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3px;
+    padding: 13px 10px;
+    span{
+        width: 1px;
+        height: 10px;
+        background-color: white;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       
+        img{
+            width: 15px;
+        }
+        h4{
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 0;
+            font-family: eng6;
+        }
+    }
+}
+@media (min-width:295px){
+    .person-about{
+        h2{
+            font-size: 16px;
+            font-family: eng2;
+        }
+        h4{
+            font-size: 14px ;
+            font-family: eng4;
+        }
+    }
+}
