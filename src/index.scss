@@ -1,0 +1,21 @@
+.modal-mobile {
+    display: none;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: eng3;
+  margin-top: 42vh;
+  background-color: #172a46;
+  padding: 10px 0;
+}
+.mobile-size {
+  display: block;
+}
+@media (min-width: 780px) {
+  .mobile-size {
+    display: none;
+  }
+  .modal-mobile{
+    display: block;
+  }
+}
