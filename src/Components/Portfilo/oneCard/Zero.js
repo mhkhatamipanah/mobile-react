@@ -38,7 +38,7 @@ function Onecard() {
             <div className="text-cardd">
               <div className="title-cardd">
                 <h2>
-                  <a href="https://mhkhatamipanah.iran.liara.run/">MH_KHP</a>
+                  <a href="https://my-personal-website-phi-two.vercel.app/">MH_KHP</a>
                 </h2>
                 <img src={icon} />
               </div>
